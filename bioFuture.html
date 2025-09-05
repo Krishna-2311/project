@@ -12,6 +12,7 @@
 
         * {
             text-align: center;
+            font-family: 'Times New Roman', Times, serif
         }
 
         ul {
@@ -21,11 +22,11 @@
 
         button {
             display: block;
-            
+
             margin: 1rem auto;
-            
+
             padding: 10px 20px;
-            
+
         }
 
 
@@ -45,17 +46,17 @@
         header {
             padding: 10px 20px;
             color: rgb(255, 123, 0);
-          text-align: left ;
+            text-align: left;
         }
 
         .b2 {
             background-color: rgb(255, 123, 0);
             color: white;
             border-radius: 10px;
-        font-weight: bolder;
-        padding: 5px;
-        font-size: large;
-        text-align: center;
+            font-weight: bolder;
+            padding: 5px;
+            font-size: large;
+            text-align: center;
         }
 
         .b3 {
@@ -70,37 +71,99 @@
             color: black;
             border-radius: 10px;
         }
-        .offer{
-            color:rgb(255, 123, 0);
-            
-  font-size: 1.5em;   
-  font-weight: bold
+
+        .offer {
+            color: rgb(255, 123, 0);
+
+            font-size: 1.5em;
+            font-weight: bold
         }
-        a{
+
+        a {
             color: white;
         }
-        a:hover{ color: blue;}
-   div  ul li::marker{
-        color: orange;
-  font-size: 1.5em;  
-  font-weight: bold}
-  .head{
-    text-align: left;
-  }
-  
+
+        a:hover {
+            color: blue;
+        }
+
+        div ul li::marker {
+            color: orange;
+            font-size: 1.5em;
+            font-weight: bold
+        }
+
+        .head {
+            text-align: left;
+        }
+
+        .c1 {
+            display: flex;
+            align-items: center;
+            /* vertically center text and image */
+            justify-content: center;
+            gap: 20px;
+            /* space between image and text */
+            margin: 20px 0;
+        }
+
+        .c1 img {
+            width: 250px;
+            /* reduce image size */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .c1.reverse {
+            display: flex;
+            text-align: left;
+            /* flips order: image right, text left */
+            border-radius: 8px;
+        }
+
+        .c1 .right {
+            text-align: left;
+            /* keep text aligned properly */
+        }
+
+        .a2 {
+            color: black;
+        }
+
+        .left {
+            border-radius: 8px;
+        }
+
+        .line {
+            color: rgb(255, 123, 0);
+
+        }
+
+        .img {
+            height: 29px;
+
+        }
+
+        .logo
+        {
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 class=" head">biofuture</h1>
+        <div class="logo">
+            <img src="logo.png" alt="BioFuture Logo" class="img">
+            <h1 class="head">biofuture</h1>
+        </div>
         <hr>
     </header>
     <main>
         <div><img src="hero.png" alt=""></div>
         <section1>
             <div>
-                <h1 >Where real talk meets real capital.</h1>
+                <h1>Where real talk meets real capital.</h1>
                 <p class="highlight"> The strategic insight trusted reputation and powerful relationship needed to lead
                     an biopharma and
                     healthcare ecosystem.</p>
@@ -108,84 +171,90 @@
                     executive and industry leaders who drives healthcare forward.</p>
 
             </div>
-            <button class="b1"><b>Start Your Application</b></button>
+            <button class="b1"><b><a href="https://biofuture.com/biofuture-registration/">Start Your
+                        Application</a></b></button>
             </section>
             <hr>
             <div>
                 <h1>BioFuture is where breakthrough find backers.</h1>
             </div>
             <div class="c1">
-               <div class="left" ><img src="seed.png" alt=""></div>
-               <div class="right">
-                <h2> Seed Showcase</h2>
-                <ul>
-                    <li> 5-minute main stage pitch</li>
-                    <li> Direct investor feedback</li>
-                    <li>Full conference+ partnering access</li>
-                </ul>
+                <img src="seed.png" alt="" class="left">
+                <div class="right">
+                    <h2> Seed Showcase</h2>
+                    <ul>
+                        <li> 5-minute main stage pitch</li>
+                        <li> Direct investor feedback</li>
+                        <li>Full conference+ partnering access</li>
+                    </ul>
                 </div>
             </div>
-            <div>
-                <img src="spotlight.png" alt="">
-                <h2>spotlight Panels</h2>
-                <ul>
-                    <li>curated discussion on stage with industry leaders</li>
-                    <li>Showcase your company to decision-makers</li>
-                    <li>Engage in unscripted dailogue + live Q&A</li>
-                </ul>
+            <div class="c1reverse">
+                <img src="spotlight.png" alt="" class="left">
+                <div class="right">
+                    <h2>spotlight Panels</h2>
+                    <ul>
+                        <li>curated discussion on stage with industry leaders</li>
+                        <li>Showcase your company to decision-makers</li>
+                        <li>Engage in unscripted dailogue + live Q&A</li>
+                    </ul>
+                </div>
+                <div class="c1">
+                    <img src="why.png" alt="" class="left">
+                    <div class="right">
+                        <h2> Why Apply?</h2>
+                        <ul>
+                            <li>Direct access to top investor</li>
+                            <li> Strategic visiblity with industry leaders</li>
+                            <li>lasting connection across healthcare & biopharma</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <section>
+                        <h2>
+                            Special offers for Presenters-<br>
+                            <span class="line"> Deadline Approaching</span>
+                        </h2>
 
-                <img src="why.png" alt="">
-                <h2> Why Apply?</h2>
-                <ul>
-                    <li>Direct access to top investor</li>
-                    <li> Strategic visiblity with industry leaders</li>
-                    <li>lasting connection across healthcare & biopharma</li>
-                </ul>
-
-            </div>
-            <hr>
-            <div>
-                <section>
-                    <h2>
-                        Special offers for Presenters-<br>
-                        Deadline Approaching
-                    </h2>
-                    <div><img src="seed.png" alt=""></div>
-                    <p>
-                        <b>Apply By Sept 8 and receive<br> <span class="offer"> 10% Off</span></b><br>
-                        On your presenter fee with code.
-                    </p>
+                        <div><img src="offer.png" alt=""></div>
+                        <p>
+                            <b>Apply By Sept 8 and receive<br> <span class="offer"> 10% Off</span></b><br>
+                            On your presenter fee with code.
+                        </p>
 
 
 
-                    <div><button class="b2">2025BfSHOOL</button></div>
+                        <div><button class="b2">2025BfSHOOL</button></div>
 
-                    <p>
-                        <a href="https://biofuture.com">Secure Your Spot</a>
-                    </p>
-                </section>
-            </div>
-            <hr>
-            <div>
-                <section>
+                        <p>
+                            <a href="https://biofuture.com">Secure Your Spot</a>
+                        </p>
+                    </section>
+                </div>
+                <hr>
+                <div>
+                    <section>
 
-                    <h2>Our Sponsers and Partners</h2>
-                    <p>Trusted by leading organization committed to advanxing biopharma and healthcare</p>
-                </section>
-            </div>
-            <hr>
-            <div>
-                <section>
-                    <button class="b3"><b>Join us in New York</b><br>
-                        October 13-15,2025<br>
-                        <u> bioFuture</u>
-                    </button>
-                    <p> Secure your opportunity to connect directly with investor, decision-makers and industry leaders
-                        across
-                        biopharma and healthcare.</p>
-                    <div><button class="b4">APPLY NOW</button></div>
-                </section>
-            </div>
+                        <h2>Our Sponsers and Partners</h2>
+                        <p>Trusted by leading organization committed to advanxing biopharma and healthcare</p>
+                    </section>
+                </div>
+                <hr>
+                <div>
+                    <section>
+                        <button class="b3"><b>Join us in New York</b><br>
+                            October 13-15,2025<br>
+                            <u><a href="https://biofuture.com"> bioFuture</a></u>
+                        </button>
+                        <div>
+                            <p> Secure your opportunity to connect directly with investor, decision-makers and industry
+                                leader across biopharma and healthcare.</p>
+                        </div>
+                        <div><button class="b4"> <a href="https://bioFuture.com" class="a2">APPLY NOW</a></button></div>
+                    </section>
+                </div>
     </main>
     <footer style="text-align:center;">
         <p> &copy;All Rights Are Reserved</p>
