@@ -95,21 +95,25 @@
 
         .head {
             text-align: left;
+            padding: 0;
+            margin: 0;
+            height: 15px;
+            font-size: smaller;
         }
 
         .c1 {
             display: flex;
             align-items: center;
-            /* vertically center text and image */
+            
             justify-content: center;
             gap: 20px;
-            /* space between image and text */
+            
             margin: 20px 0;
         }
 
         .c1 img {
             width: 250px;
-            /* reduce image size */
+            
             height: auto;
             border-radius: 8px;
         }
@@ -117,13 +121,13 @@
         .c1.reverse {
             display: flex;
             text-align: left;
-            /* flips order: image right, text left */
+            
             border-radius: 8px;
         }
 
         .c1 .right {
             text-align: left;
-            /* keep text aligned properly */
+
         }
 
         .a2 {
@@ -141,12 +145,16 @@
 
         .img {
             height: 29px;
+            border-bottom: 1px solid orange;
+            margin: 0;
+            padding: 0;
 
         }
 
-        .logo
-        {
+        .logo {
             text-align: left;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
@@ -155,7 +163,7 @@
     <header>
         <div class="logo">
             <img src="logo.png" alt="BioFuture Logo" class="img">
-            <h1 class="head">biofuture</h1>
+            <p class="head">Reimagin the future of healthcare</p>
         </div>
         <hr>
     </header>
